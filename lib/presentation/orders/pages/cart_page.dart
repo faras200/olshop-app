@@ -150,10 +150,12 @@ class CartPage extends StatelessWidget {
                 onPressed: () async {
                   final isAuth = await AuthLocalDatasource().isAuth();
                   if (!isAuth) {
+                    // ignore: use_build_context_synchronously
                     context.pushNamed(
                       RouteConstants.login,
                     );
                   } else {
+                    // ignore: use_build_context_synchronously
                     context.goNamed(
                       RouteConstants.address,
                       pathParameters: PathParameters(

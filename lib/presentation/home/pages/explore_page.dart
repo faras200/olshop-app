@@ -19,14 +19,14 @@ import '../widgets/title_content.dart';
 
 import 'package:badges/badges.dart' as badges;
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class ExplorePage extends StatefulWidget {
+  const ExplorePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ExplorePage> createState() => _ExplorePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ExplorePageState extends State<ExplorePage> {
   late TextEditingController searchController;
 
   final List<String> banners1 = [
@@ -124,79 +124,7 @@ class _HomePageState extends State<HomePage> {
               // );
             },
           ),
-          const SpaceHeight(16.0),
-          // BannerSlider(items: banners1),
-          // const SpaceHeight(12.0),
-          TitleContent(
-            title: 'Kategori Produk',
-            onSeeAllTap: () {},
-          ),
-          const SpaceHeight(12.0),
-          const MenuCategories(),
-          const SpaceHeight(30.0),
-          BlocBuilder<AllProductBloc, AllProductState>(
-            builder: (context, state) {
-              return state.maybeWhen(
-                loaded: (products) {
-                  return ProductList(
-                      title: 'Produk Terbaru',
-                      onSeeAllTap: () {},
-                      items: products.length > 2
-                          ? products.sublist(0, 2)
-                          : products);
-                },
-                orElse: () => const SizedBox.shrink(),
-                loading: () => const Center(
-                  child: CircularProgressIndicator(),
-                ),
-                error: (message) => Center(
-                  child: Text(message),
-                ),
-              );
-              // return ProductList(
-              //   title: 'Featured Product',
-              //   onSeeAllTap: () {},
-              //   items: featuredProducts,
-              // );
-            },
-          ),
-          const SpaceHeight(50.0),
-          BannerSlider(items: banners2),
-          const SpaceHeight(28.0),
-          BlocBuilder<BestSellerProductBloc, BestSellerProductState>(
-            builder: (context, state) {
-              return state.maybeWhen(
-                loaded: (products) {
-                  return ProductList(
-                      title: 'Produk Terbaik',
-                      onSeeAllTap: () {},
-                      items: products.length > 2
-                          ? products.sublist(0, 2)
-                          : products);
-                },
-                orElse: () => const SizedBox.shrink(),
-                loading: () => const Center(
-                  child: CircularProgressIndicator(),
-                ),
-                error: (message) => Center(
-                  child: Text(message),
-                ),
-              );
-            },
-          ),
-          // const SpaceHeight(50.0),
-          // ProductList(
-          //   title: 'New Arrivals',
-          //   onSeeAllTap: () {},
-          //   items: newArrivals,
-          // ),
-          // const SpaceHeight(50.0),
-          // ProductList(
-          //   title: 'Top Rated Product',
-          //   onSeeAllTap: () {},
-          //   items: topRatedProducts,
-          // ),
-          const SpaceHeight(50.0),
+          const SpaceHeight(15.0),
           BlocBuilder<AllProductBloc, AllProductState>(
             builder: (context, state) {
               return state.maybeWhen(
@@ -204,8 +132,8 @@ class _HomePageState extends State<HomePage> {
                   return ProductList(
                       title: 'Semua Produk',
                       onSeeAllTap: () {},
-                      items: products.length > 4
-                          ? products.sublist(0, 4)
+                      items: products.length > 10
+                          ? products.sublist(0, 2)
                           : products);
                 },
                 orElse: () => const SizedBox.shrink(),

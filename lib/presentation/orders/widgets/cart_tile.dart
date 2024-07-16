@@ -23,7 +23,11 @@ class CartTile extends StatelessWidget {
           motion: const StretchMotion(),
           children: [
             SlidableAction(
-              onPressed: (context) {},
+              onPressed: (context) {
+                context
+                    .read<CheckoutBloc>()
+                    .add(CheckoutEvent.removeItemAll(data.product));
+              },
               backgroundColor: AppColors.primary.withOpacity(0.44),
               foregroundColor: AppColors.red,
               icon: Icons.delete_outlined,

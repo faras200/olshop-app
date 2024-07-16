@@ -21,6 +21,7 @@ mixin _$CheckoutEvent {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -32,6 +33,7 @@ mixin _$CheckoutEvent {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -43,6 +45,7 @@ mixin _$CheckoutEvent {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -55,6 +58,7 @@ mixin _$CheckoutEvent {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -65,6 +69,7 @@ mixin _$CheckoutEvent {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -75,6 +80,7 @@ mixin _$CheckoutEvent {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -142,6 +148,7 @@ class _$StartedImpl implements _Started {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -156,6 +163,7 @@ class _$StartedImpl implements _Started {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -170,6 +178,7 @@ class _$StartedImpl implements _Started {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -188,6 +197,7 @@ class _$StartedImpl implements _Started {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -201,6 +211,7 @@ class _$StartedImpl implements _Started {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -214,6 +225,7 @@ class _$StartedImpl implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -297,6 +309,7 @@ class _$AddItemImpl implements _AddItem {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -311,6 +324,7 @@ class _$AddItemImpl implements _AddItem {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -325,6 +339,7 @@ class _$AddItemImpl implements _AddItem {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -343,6 +358,7 @@ class _$AddItemImpl implements _AddItem {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -356,6 +372,7 @@ class _$AddItemImpl implements _AddItem {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -369,6 +386,7 @@ class _$AddItemImpl implements _AddItem {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -457,6 +475,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -471,6 +490,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -485,6 +505,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -503,6 +524,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -516,6 +538,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -529,6 +552,7 @@ class _$RemoveItemImpl implements _RemoveItem {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -547,6 +571,172 @@ abstract class _RemoveItem implements CheckoutEvent {
   Product get product;
   @JsonKey(ignore: true)
   _$$RemoveItemImplCopyWith<_$RemoveItemImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$RemoveItemAllImplCopyWith<$Res> {
+  factory _$$RemoveItemAllImplCopyWith(
+          _$RemoveItemAllImpl value, $Res Function(_$RemoveItemAllImpl) then) =
+      __$$RemoveItemAllImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({Product product});
+}
+
+/// @nodoc
+class __$$RemoveItemAllImplCopyWithImpl<$Res>
+    extends _$CheckoutEventCopyWithImpl<$Res, _$RemoveItemAllImpl>
+    implements _$$RemoveItemAllImplCopyWith<$Res> {
+  __$$RemoveItemAllImplCopyWithImpl(
+      _$RemoveItemAllImpl _value, $Res Function(_$RemoveItemAllImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? product = null,
+  }) {
+    return _then(_$RemoveItemAllImpl(
+      null == product
+          ? _value.product
+          : product // ignore: cast_nullable_to_non_nullable
+              as Product,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$RemoveItemAllImpl implements _RemoveItemAll {
+  const _$RemoveItemAllImpl(this.product);
+
+  @override
+  final Product product;
+
+  @override
+  String toString() {
+    return 'CheckoutEvent.removeItemAll(product: $product)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$RemoveItemAllImpl &&
+            (identical(other.product, product) || other.product == product));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, product);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RemoveItemAllImplCopyWith<_$RemoveItemAllImpl> get copyWith =>
+      __$$RemoveItemAllImplCopyWithImpl<_$RemoveItemAllImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(Product product) addItem,
+    required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
+    required TResult Function(int addressId) addAddressId,
+    required TResult Function(String paymentMethod) addPaymentMethod,
+    required TResult Function(String shippingService, int shippingCost)
+        addShippingService,
+  }) {
+    return removeItemAll(product);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function(Product product)? addItem,
+    TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
+    TResult? Function(int addressId)? addAddressId,
+    TResult? Function(String paymentMethod)? addPaymentMethod,
+    TResult? Function(String shippingService, int shippingCost)?
+        addShippingService,
+  }) {
+    return removeItemAll?.call(product);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(Product product)? addItem,
+    TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
+    TResult Function(int addressId)? addAddressId,
+    TResult Function(String paymentMethod)? addPaymentMethod,
+    TResult Function(String shippingService, int shippingCost)?
+        addShippingService,
+    required TResult orElse(),
+  }) {
+    if (removeItemAll != null) {
+      return removeItemAll(product);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_AddItem value) addItem,
+    required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
+    required TResult Function(_AddAddressId value) addAddressId,
+    required TResult Function(_AddPaymentMethod value) addPaymentMethod,
+    required TResult Function(_AddShippingService value) addShippingService,
+  }) {
+    return removeItemAll(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_AddItem value)? addItem,
+    TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
+    TResult? Function(_AddAddressId value)? addAddressId,
+    TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
+    TResult? Function(_AddShippingService value)? addShippingService,
+  }) {
+    return removeItemAll?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_AddItem value)? addItem,
+    TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
+    TResult Function(_AddAddressId value)? addAddressId,
+    TResult Function(_AddPaymentMethod value)? addPaymentMethod,
+    TResult Function(_AddShippingService value)? addShippingService,
+    required TResult orElse(),
+  }) {
+    if (removeItemAll != null) {
+      return removeItemAll(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _RemoveItemAll implements CheckoutEvent {
+  const factory _RemoveItemAll(final Product product) = _$RemoveItemAllImpl;
+
+  Product get product;
+  @JsonKey(ignore: true)
+  _$$RemoveItemAllImplCopyWith<_$RemoveItemAllImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -618,6 +808,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -632,6 +823,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -646,6 +838,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -664,6 +857,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -677,6 +871,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -690,6 +885,7 @@ class _$AddAddressIdImpl implements _AddAddressId {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -780,6 +976,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -794,6 +991,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -808,6 +1006,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -826,6 +1025,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -839,6 +1039,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -852,6 +1053,7 @@ class _$AddPaymentMethodImpl implements _AddPaymentMethod {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
@@ -952,6 +1154,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     required TResult Function() started,
     required TResult Function(Product product) addItem,
     required TResult Function(Product product) removeItem,
+    required TResult Function(Product product) removeItemAll,
     required TResult Function(int addressId) addAddressId,
     required TResult Function(String paymentMethod) addPaymentMethod,
     required TResult Function(String shippingService, int shippingCost)
@@ -966,6 +1169,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     TResult? Function()? started,
     TResult? Function(Product product)? addItem,
     TResult? Function(Product product)? removeItem,
+    TResult? Function(Product product)? removeItemAll,
     TResult? Function(int addressId)? addAddressId,
     TResult? Function(String paymentMethod)? addPaymentMethod,
     TResult? Function(String shippingService, int shippingCost)?
@@ -980,6 +1184,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     TResult Function()? started,
     TResult Function(Product product)? addItem,
     TResult Function(Product product)? removeItem,
+    TResult Function(Product product)? removeItemAll,
     TResult Function(int addressId)? addAddressId,
     TResult Function(String paymentMethod)? addPaymentMethod,
     TResult Function(String shippingService, int shippingCost)?
@@ -998,6 +1203,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     required TResult Function(_Started value) started,
     required TResult Function(_AddItem value) addItem,
     required TResult Function(_RemoveItem value) removeItem,
+    required TResult Function(_RemoveItemAll value) removeItemAll,
     required TResult Function(_AddAddressId value) addAddressId,
     required TResult Function(_AddPaymentMethod value) addPaymentMethod,
     required TResult Function(_AddShippingService value) addShippingService,
@@ -1011,6 +1217,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     TResult? Function(_Started value)? started,
     TResult? Function(_AddItem value)? addItem,
     TResult? Function(_RemoveItem value)? removeItem,
+    TResult? Function(_RemoveItemAll value)? removeItemAll,
     TResult? Function(_AddAddressId value)? addAddressId,
     TResult? Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult? Function(_AddShippingService value)? addShippingService,
@@ -1024,6 +1231,7 @@ class _$AddShippingServiceImpl implements _AddShippingService {
     TResult Function(_Started value)? started,
     TResult Function(_AddItem value)? addItem,
     TResult Function(_RemoveItem value)? removeItem,
+    TResult Function(_RemoveItemAll value)? removeItemAll,
     TResult Function(_AddAddressId value)? addAddressId,
     TResult Function(_AddPaymentMethod value)? addPaymentMethod,
     TResult Function(_AddShippingService value)? addShippingService,
